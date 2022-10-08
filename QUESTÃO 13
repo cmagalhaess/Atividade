@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int pont = 0, nMulher = 0;
+    
+    for (int i =0; i < 10; i++){
+      System.out.print("Informe seu sexo(1 = feminino) e (2 = masculino): ");
+      int x = sc.nextInt();
+      System.out.print("Informe sua idade: ");
+      int y = sc.nextInt();
+      
+      if(x == 1 && y > 20 && y <= 40){
+        nMulher++;
+      }
+    }
+   System.err.println("O numero de mulher entre 20 e 40 anos é igual a " + nMulher); 
+  }
+}
