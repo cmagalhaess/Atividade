@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int pont = 0, nMulher = 0, nHomem = 0;
+
+    for (int i = 0; i < 10; i++){
+      System.out.print("Informe seu sexo(1 = feminino, 2 = masculino): ");
+      int x = sc.nextInt();
+      System.out.print("Informe seu peso: ");
+      int y = sc.nextInt();
+      
+      if(x == 1 && y > 50 && y <= 50){
+        nMulher++;
+      }
+        else if(x == 2 && y >= 60 && y <= 60){
+          nHomem++;
+        }
+    }
+    System.out.println("O numero de mulheres por idade e peso entre 50 e 70 anos é igual a: " + nMulher);
+    System.out.println("O numero de homem por idade e peso entre 50 e 60 anos é igual a: " + nHomem);
+  }
+}
