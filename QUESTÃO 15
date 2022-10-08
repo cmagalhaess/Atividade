@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+		double a1, a2, media;
+		
+   for(int i = 1; i < 4; i++){
+    System.out.println("Aluno " + i);
+		System.out.println("Informe suas duas notas: ");
+		a1 = sc.nextDouble();
+		a2 = sc.nextDouble();
+    
+    media = (a1 + a2 ) / 2;
+    System.out.println("MEDIA = "+ media);
+  }
+    
+  }
+}
