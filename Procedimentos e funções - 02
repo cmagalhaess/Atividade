@@ -1,0 +1,37 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    
+    soma();   
+    subtracao();
+    multiplicao();
+    
+  }
+  public static int soma(){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Informe dois numeros inteiros positivo: ");
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int soma = a + b;
+    System.out.println("SOMA = "+ soma);
+    return soma;
+  }
+  public static int subtracao(){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Informe dois numeros inteiros positivo: ");
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int subtracao = a - b;
+    System.out.println("SUBTRAÇÃO = "+ subtracao);
+    return subtracao;
+  }
+  public static int multiplicao(){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Informe dois numeros inteiros positivo: ");
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int multiplicao = a * b;
+    System.out.println("MULTIPLICAÇÃO = "+ multiplicao);
+    return multiplicao;
+  }
+}
